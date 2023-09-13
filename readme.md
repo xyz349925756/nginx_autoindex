@@ -53,3 +53,38 @@ nginx配置如下
 ```
 
 >   关于跨域访问的问题,没有测试,应该问题不大.
+
+把这css,js,index.html 文件复制到需要暴露的目录,推荐在该目录下创建 .theme 文件夹(注意这个文件夹前面有个点).然后按照上面的配置配置好nginx.
+
+配置好nginx记得重载一下,linux下就是
+
+```bash
+$ nginx -s reload  
+```
+
+windows
+
+```cmd
+$ cd x:\younginx\
+$ dir
+... nginx.exe ... 就是切换到可以看到nginx.exe 这个位置
+$ nginx -t   # 测试下配置文件是否正确
+$ taskkill -f -im nginx.exe 结束nginx进程
+$ nginx   再启动,这里不一定是这个命令.我自己开发的是 nginx-service restart ,
+一般都是直接启动这个
+❯❯❯ 16:10:02  D:\桌面 ❯❯❯ cd F:\apps\nginx\
+❯❯❯ 16:10:05  F:\apps\nginx ❯❯❯ .\nginx.exe
+```
+
+什么是配置好?
+
+就是当你输入URL/json/ 返回的是json数据,输入URL打开的是我这个index模板.
+
+![image-20230913161157314](.readme.assets/image-20230913161157314.png)
+
+就这样就可以了.
+
+这个后期维护只是自定义一些color样式什么的.而且是不定期.
+
+
+
