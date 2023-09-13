@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <title>目录</title>
+    <link rel="stylesheet" href="css/my.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.4.2-web/css/all.css">
+    <script src="js/jquery_1.9.1.min.js"></script>
+    <script src="js/dir.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <h1><span>软件下载</span></h1>
+
+    <hr>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="btn-group">
+                <button class="btn btn-success" onclick="goBack()"><i class="fa-solid fa-backward-fast fa-beat fa-3xs"></i>&nbsp;&nbsp;返回</button>
+                <button class="btn btn-warning" onclick="goHome()"><i class="fa-solid fa-house fa-bounce fa-3xs"></i>&nbsp;&nbsp;主页</button>
+                <button class="btn btn-danger" onclick="goForward()">后退&nbsp;&nbsp;<i class="fa-solid fa-forward-fast fa-beat fa-3xs"></i></button>
+            </div>
+        </div>
+        <table class="table table-striped border-primary" id="load">
+            <tr>
+                <th style="width: 40%"><i class="fa-brands fa-microsoft fa-spin fa-3xs"></i>&nbsp;&nbsp;名称</th>
+                <th style="width: 20%"><i class="fa-solid fa-layer-group fa-flip fa-3xs"></i>&nbsp;&nbsp;类型</th>
+                <th style="width: 20%"><i class="fa-solid fa-clock fa-spin fa-spin-reverse fa-3xs"></i>&nbsp;&nbsp;修改时间</th>
+                <th style="width: 20%"><i class="fa-solid fa-bars fa-beat fa-3xs"></i>&nbsp;&nbsp;大小</th>
+            </tr>
+        </table>
+    </div>
+    <hr>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Github</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">MyWeb</a></li>
+            <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li> -->
+            <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li> -->
+          </ul>
+          <p class="text-center text-muted">© 2023 cloudb.oub, China</p>
+        </footer>
+      </div>
+
+
+
+
+</body>
+</html>
