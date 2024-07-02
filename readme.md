@@ -1,5 +1,13 @@
 # nginx_autoindex 美化模板
 
+## [update]
+
+2024-7-2  js/dir.js 文件排除 ini,ico 图标文件。
+
+
+
+
+
 ## 预览
 
 ![image-20230913154626086](.readme.assets/image-20230913154626086.png)

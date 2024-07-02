@@ -21,6 +21,8 @@
 
     function processData(data) {
         let result = '';
+		// 过滤掉 .ini 和 .ico 文件
+		data = data.filter(item => !item.name.endsWith('.ini') && !item.name.endsWith('.ico'));
         for (let i = 0; i < data.length; i++) {
             result += '<tr>';
             result += '<td>' + createLink(data[i]) + '</td>'; // 调用createLink函数创建超链接
